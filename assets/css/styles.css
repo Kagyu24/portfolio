@@ -9,8 +9,8 @@
   --bg-color: #1c1c1c;
   --primary-color: #537dac;
   --secondary-color: #ff7235;
-  --primary-shadow: #7f8084;
-  --secondary-shadow: #97a6cc;
+  --primary-shadow: #4b4b4b;
+  --secondary-shadow: #888888;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -107,6 +107,8 @@ nav ul li {
   height: 600px;
   margin-top: 2rem;
   margin-right: 10rem;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  border-radius: 6px;
 }
 
 .bio {
@@ -241,6 +243,11 @@ nav ul li {
   display: none;
 }
 
+.contact-form p {
+  text-align: center;
+  font-size: 1.3em;
+}
+
 .contact h2 {
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
@@ -345,7 +352,7 @@ footer {
 /*!!DIFFERENT SCREEN SIZE AREA!!*/
 
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 720px) {
   nav {
     padding: .5rem 3rem;
   }
@@ -455,12 +462,12 @@ footer {
   .hero img {
     margin-top: 3rem;
     margin-bottom: -4rem;
-    height: 33rem;
-    width: 24rem;
+    height: 30rem;
+    width: 22rem;
   }
 
   .bio {
-    width: 18.3rem;
+    width: 18rem;
   }
 
   .project-container,
